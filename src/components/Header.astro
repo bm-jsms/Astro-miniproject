@@ -1,14 +1,63 @@
 ---
 import Card from './Card'
+
+const cards = [
+    {
+        id: 1,
+        title: 'Intro',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.',
+        link: '/'
+    },
+    {
+        id: 2,
+        title: 'sdsd',
+        text: 'dfdf',
+        link: 'about'
+    },
+    {
+        id: 3,
+        title: 'sdsd',
+        text: 'dfdf',
+        link: 'pages'
+    },
+    {
+        id: 4,
+        title: 'sdsd',
+        text: 'dfdf',
+        link: 'about'
+    },
+    {
+        id: 5,
+        title: 'sdsd',
+        text: 'dfdf',
+        link: 'pages'
+    },
+    {
+        id: 6,
+        title: 'sdsd',
+        text: 'dfdf',
+        link: 'about'
+    },
+    
+]
 ---
 <section class='bg-gray-900 text-white'>
     <div class='mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16'>
         <div class='mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
-    
-            <Card title='sdsd' text='dfdf' link='about'/>
-            <Card title='sdsd' text='dfdf' link='about'/>
-            <Card title='sdsd' text='dfdf' link='about'/>
-            <Card title='sdsd' text='dfdf' link='about'/>
+            {
+                cards.map(
+                    (card) => (
+                        <Card
+                            title={card.title}
+                            text={card.text}
+                            link={card.link}
+                            />
+                           
+                    )
+
+                )
+                
+            }
 
         </div>  
 
