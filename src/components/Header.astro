@@ -1,5 +1,6 @@
 ---
 import Card from './Card'
+import ButtonSuscribe from './Subscribe'
 
 const cards = [
     {
@@ -49,8 +50,9 @@ const cards = [
             Welcome to our Community!
         </h1>
         <p class='md:px-40 text-lg font-normal text-gray-200'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur officia atque iure, velit minima adipisci. Ut, nulla corporis. A quae iste dicta laborum ullam sed dignissimos odio molestias nulla.</p>
+        <ButtonSuscribe client:load/>
     </div>
-    <div class='mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16'>
+    <div class='mx-auto max-w-screen-xl px-4 py-2 sm:px-6 sm:py-4 lg:px-8 lg:py-8'>
         <div class=' grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
             {
                 cards.map(
